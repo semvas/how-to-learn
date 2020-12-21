@@ -29,3 +29,23 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+.logo_place_header {
+  width: 636px;
+  height: 430px;
+  border: 1px solid red;
+  background-image: url(../images/logo_place_header.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+.header__title {
+  color: red;
+  border: 1px solid red;
+}
+
+.kaufman {
+  overflow: hidden;
+}
+
+
