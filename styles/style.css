@@ -14,12 +14,66 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+}
+
+.logo_place_header {
+  width: 183px;
+  height: 32px;
+  border: 1px solid red;
+  background-image: url(../images/logo_place_header.svg);
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  
+}
+
+.header__title {
+  margin: 0;
+  margin-left: 64px;
+  border: 1px solid red;
+  color: red;
+  width: 730px;
+  line-height: 94px;
+  font-size: 102px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.header__subtitle {
+  margin: 0;
+  width: 730px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  border: 1px solid red;
+  background-image: url(../images/header-image.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+.table__cell {
+  width: 250px;
+  border: 1px solid red;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -30,22 +84,16 @@
   margin-top: 80px;
 }
 
-.logo_place_header {
-  width: 636px;
-  height: 430px;
-  border: 1px solid red;
-  background-image: url(../images/logo_place_header.svg);
-  background-position: center;
-  background-size: contain;
-}
-
-.header__title {
-  color: red;
-  border: 1px solid red;
-}
-
 .kaufman {
   overflow: hidden;
+  background-color: #1f1f1f;
 }
 
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
 
+.footer__social-icon_img_ig {
+  background-image: url(../images/instagram_color_white.svg);
+}
