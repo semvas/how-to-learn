@@ -134,9 +134,13 @@
   font-weight: normal;
 }
 
-.two-columns__paragraph_position_center {
+/* .two-columns__paragraph_position_center {
   margin: 30px 0;
-}
+} */
+
+.two-columns__paragraph:nth-of-type(2n) {
+  margin: 30px 0;
+} 
 
 .two-columns__span-accent {
   line-height: 34px;
@@ -209,19 +213,20 @@
   height: 790px;
   background-color: #f2f2f2;
   position: relative;
-  z-index: -2;
 }
 
-/* .feynman__title {
+.feynman__title {
   border: 1px solid red;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 100px;
   width: 648px;
   position: relative;
+  align-items: center;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -233,13 +238,14 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-} */
+  z-index: 1;
+}
 
 .feynman__link {
   border: 1px solid red;
   margin: 0;
-  line-height: 25px;
-  font-size: 18px;
+  line-height: 51px;
+  font-size: 36px;
   font-weight: normal;
   position: absolute;
   top: 50%;
@@ -254,8 +260,9 @@
   height: 637px;
   background-image: url(../images/feynman.png);
   background-size: cover;
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -265,12 +272,13 @@
   overflow: hidden;
   background-color: #1f1f1f;
   box-sizing: border-box;
-  position: relative;
   padding: 90px 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .kaufman-triangle {
@@ -283,23 +291,21 @@
   
 }
 
-.table__cell_theme_dark {
-  z-index: 1;
-}
 
-.section-title_theme_dark {
+/* .section-title_theme_dark {
    color: white;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-}
+} */
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
+  /*color: white;*/
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
 }
 
 /* .footer__social-icon {
@@ -309,17 +315,21 @@
 
 .footer {
   background-color: #1f1f1f;
+  min-height: 350px;
   border: 1px solid red
 }
 
 .footer__columns {
   color: white;
+  margin: 90px auto 60px; 
   border: 1px solid red;
   width: 90%;
-  display: flex; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__column {
+  flex-direction: column;
   
 }
 
@@ -327,6 +337,8 @@
   color: white;
   flex-basis: 711px;
   border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
@@ -336,6 +348,7 @@
 
 .footer__author {
   color: white;
+  margin: 18px 0;
   border: 1px solid red;
 }
 
@@ -346,21 +359,34 @@
 
 .footer__column-heading {
   color: white;
+  margin: 0;
+  margin-bottom: 20px;
   border: 1px solid red;
 }
 
 .footer__column-links {
   color: white;
+  margin: 20px auto 16px;
   border: 1px solid red;
+  
 }
 
 .footer__column-link {
   color: white;
   border: 1px solid red;
+  display: block;
 }
+
+.footer__column-link:nth-of-type(2n) {
+  margin: 10px 0;
+} 
 
 .footer__column_content_social {
   color: white;
   border: 1px solid red;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
 }
 
