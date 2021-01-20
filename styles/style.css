@@ -7,6 +7,7 @@
 
 .link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .link:hover { 
@@ -96,6 +97,7 @@
   font-size: 60px;
   font-weight: bold;
   z-index: 1;
+  border: 1px solid red;
 }
 
 .section-subtitle {
@@ -106,6 +108,7 @@
   font-size: 24px;
   font-weight: normal;
   z-index: 1;
+  border: 1px solid red;
 }
 
 .table {
@@ -141,7 +144,7 @@
 .feynman {
   height: 790px;
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 80px;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
   background-position: bottom left;
@@ -177,7 +180,6 @@
   position: absolute;
   top: 50%;
   right: 64px;
-  color: #2f80ed;
 }
 
 .kaufman {
